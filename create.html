@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create</title>
+	<link rel="stylesheet" href="style4.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+	<script language = "JavaScript">
+		function validateForm()
+		{
+			var valid=true;
+			if (document.myform.fname.value=='')
+			{
+				alert('PLEASE FILL IN YOUR NAME!');
+				document.myform.fname.focus();
+				valid=false;
+			}
+			if (document.myform.femail.value=='')
+			{
+				alert('PLEASE ENTER YOUR EMAIL!');
+				document.myform.femail.focus();
+				valid=false;
+			}
+			if (document.myform.fphone.value=='')
+			{
+				alert('PLEASE PUT YOUR NUMBER!');
+				document.myform.fphone.focus();
+				valid=false;
+			}
+		}
+		
+	</script>	
+</head>
+
+<body>
+	<section class="header2">
+		<nav>
+		<a href="index.html"><img src="pizza logo.png"></a>
+		<div class="nav-links">
+			<ul>
+<li><a href = "index.html">Home</a></li>
+<li><a href = "about.html">About</a></li>
+<li><a href = "menu.html">Menu</a></li>
+<li><a href = "create.html">Create</a></li>
+</ul>
+			</div>
+		</nav>
+
+</section>
+
+	<div class="container">
+		<div class="create-box">
+			<div class="left"></div>
+			<div class="right">
+			<h2>CREATE YOUR OWN PIZZA</h2>
+			<form name="myform" action=""  method="POST" onsubmit="return validateForm()">
+			<input type="text" name="fname" class="field" placeholder="Your Name" >
+			<input type="email" name="femail" class="field" placeholder="Your Email">
+			<input type="text" name="fphone" class="field" placeholder="Your Phone">
+					
+			<p>Pizza Shapes :<br>
+       <input type="radio" name="pizzaT" value="circle">Circle
+       <input type="radio" name="pizzaT" value="square">Square
+				</p> <br>				
+				
+			<p> Toppings :<br>
+	<input type="checkbox" name="BeefP" > Beef pepperoni	
+	<input type="checkbox" name="ChickenP" > Chicken pepperoni <br>				
+    <input type="checkbox" name="chickenroll" > Chicken roll 
+    <input type="checkbox" name="fish" > Fish Finger
+    <input type="checkbox" name="duck" > Smoked Duck <br>
+    <input type="checkbox" name="crab" > Crab Meat
+				</p> <br>				
+				
+			<p> Add Toppings :<br>
+	<input type="checkbox" name="Onion" > Caramelized Onion	
+	<input type="checkbox" name="Pineapple" > Sweet Pineapples 	<br>			
+    <input type="checkbox" name="mushroom" > Mushroom 
+    <input type="checkbox" name="Bpepper" > Bell Pepper
+    <input type="checkbox" name="Chili" > Chili 
+				</p> <br>				
+				
+			<p>Cheeseeeeeee! <br>
+     <select name="cheese" >
+          <option>Percentage Cheese</option>
+          <option value="0">No Cheese</option>
+          <option value="25">25% Cheese</option>
+          <option value="50">50% Cheese</option>
+          <option value="100">Cheesilicious</option>		 
+     </select>	</p><br>
+				
+			<textarea class="field area" placeholder="Suggestion of what we need to add"></textarea>
+			<button class="btn">Create!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!---- Footer ---->	
+	
+<section class="footer">	
+	<p>Follow Us On</p>
+	<a class="social-icon" href="https://www.facebook.com/USPizzaMalaysia/" target="_blank">
+		<ion-icon name="logo-facebook"></ion-icon>
+	</a>
+	<a class="social-icon" href="https://www.instagram.com/uspizzamalaysia/?hl=en" target="_blank">
+		<ion-icon name="logo-instagram"></ion-icon>
+	</a>
+	<a class="social-icon" href="https://www.youtube.com/channel/UCxGXN2IHT3ypLTz60lH319w/about" target="_blank">
+		<ion-icon name="logo-youtube"></ion-icon>
+	</a>	
+	<a class="social-icon" href="https://www.tiktok.com/@uspizzamy" target="_blank">
+		<ion-icon name="logo-tiktok"></ion-icon>
+	</a>	
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</section>		
+	
+	
+</body>
+</html>
